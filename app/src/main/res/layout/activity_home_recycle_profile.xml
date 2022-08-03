@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeRecycleProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/homerecycleemail"
+                android:layout_width="65dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.864"
+                app:layout_constraintStart_toEndOf="@+id/homerecyclecall"
+                app:layout_constraintTop_toBottomOf="@+id/largedatarecycle"
+                app:layout_constraintVertical_bias="0.101"
+                app:srcCompat="@drawable/email" />
+
+            <ImageView
+                android:id="@+id/homerecyclesms"
+                android:layout_width="75dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.282"
+                app:layout_constraintStart_toEndOf="@+id/homerecyclecall"
+                app:layout_constraintTop_toBottomOf="@+id/largedatarecycle"
+                app:layout_constraintVertical_bias="0.103"
+                app:srcCompat="@drawable/sms" />
+
+            <TextView
+                android:id="@+id/homerecycletext3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#393939"
+                android:textColorHint="#373737"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecycletext2" />
+
+            <TextView
+                android:id="@+id/homerecycletext2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecycletext1" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/purple_700"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="#FFFFFF"
+                app:titleTextColor="#FFFFFF" />
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/homerecyclecarousel"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                app:fillColor="#FFFFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"
+                tools:ignore="MissingConstraints">
+
+            </com.synnapps.carouselview.CarouselView>
+
+            <ImageView
+                android:id="@+id/homerecycleprofileimage"
+                android:layout_width="140dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecyclecarousel"
+                app:srcCompat="@drawable/businessman" />
+
+            <TextView
+                android:id="@+id/homerecycletext1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#C10000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecycleprofileimage" />
+
+            <ImageView
+                android:id="@+id/homerecyclecall"
+                android:layout_width="75dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/largedatarecycle"
+                app:layout_constraintVertical_bias="0.09"
+                app:srcCompat="@drawable/call" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="261dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecyclecall"
+                app:srcCompat="@drawable/verified" />
+
+            <TextView
+                android:id="@+id/largedatarecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homerecycletext3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.esoft.subhasis.myapplication">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="Arose United"
+        android:roundIcon="@drawable/ic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".AllMoreMenu"
+            android:exported="true" />
+        <activity
+            android:name=".CurrentOffers"
+            android:exported="true" />
+        <activity
+            android:name=".MoreOptions"
+            android:exported="true" />
+        <activity
+            android:name=".PayZone"
+            android:exported="true" />
+        <activity
+            android:name=".TestTheAsynchronousRetrieval"
+            android:exported="true" />
+        <activity
+            android:name=".ScanCard"
+            android:exported="true" />
+        <activity
+            android:name=".MyCard"
+            android:exported="true" />
+        <activity
+            android:name=".CardPanel"
+            android:exported="true" />
+        <activity
+            android:name=".RenewCard"
+            android:exported="true" />
+        <activity
+            android:name=".issueCard"
+            android:exported="true" />
+        <activity
+            android:name=".ScanBarCode"
+            android:exported="true"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".Shopitempage"
+            android:exported="true" />
+        <activity
+            android:name=".HomeRecycleProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Pages"
+            android:exported="true" />
+        <activity
+            android:name=".Profiles"
+            android:exported="true" />
+        <activity
+            android:name=".AllOptions"
+            android:exported="true" />
+        <activity
+            android:name=".Account"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" android:noHistory="true"/>
+        <activity
+            android:name=".LoginTwo"
+            android:exported="true" android:noHistory="true"/>
+        <activity
+            android:name=".verifyOtp"
+            android:exported="true"
+            android:noHistory="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="locale"
+            android:exported="true" />
+        <activity
+            android:name=".AddDetails"
+            android:exported="true" android:noHistory="true"/>
+        <activity
+            android:name=".Login"
+            android:exported="true"  />
+        <activity
+            android:name=".Splash"
+            android:exported="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Capture"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+
+        <service android:name=".MyNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

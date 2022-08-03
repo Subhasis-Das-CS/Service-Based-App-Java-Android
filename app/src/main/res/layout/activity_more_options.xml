@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreOptions">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mores"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/more"
+                android:padding="6dp"
+                android:text="More"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weddingrequisites"
+                app:layout_constraintTop_toBottomOf="@+id/travel" />
+
+            <Button
+                android:id="@+id/weddingrequisites"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/weddingcouple"
+                android:padding="6dp"
+                android:textSize="10sp"
+                android:text="Wedding Requisites"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trainninginstitute" />
+
+            <Button
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/airplane"
+                android:padding="6dp"
+                android:text="Travel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trainninginstitute"
+                app:layout_constraintTop_toBottomOf="@+id/securityandcctv" />
+
+            <Button
+                android:id="@+id/trainninginstitute"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/bank"
+                android:padding="6dp"
+                android:textSize="10sp"
+                android:text="Training Institutes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repairandservices" />
+
+            <Button
+                android:id="@+id/securityandcctv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/cctv"
+                android:padding="6dp"
+                android:text="Security and CCTV"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/repairandservices"
+                app:layout_constraintTop_toBottomOf="@+id/realestate" />
+
+            <Button
+                android:id="@+id/repairandservices"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/ic_baseline_fastfood_24"
+                android:padding="6dp"
+                android:text="Repair and Services"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/petandpetcare" />
+
+            <Button
+                android:id="@+id/realestate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/interiodesign"
+                android:padding="6dp"
+                android:text="Real Estate"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/rent"
+                app:layout_constraintStart_toEndOf="@+id/petandpetcare"
+                app:layout_constraintTop_toBottomOf="@+id/party" />
+
+            <Button
+                android:id="@+id/petandpetcare"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/pets"
+                android:padding="6dp"
+                android:text="Pet Care"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/packersandmovers" />
+
+            <Button
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/renttt"
+                android:padding="6dp"
+                android:text="Rent"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pest" />
+
+            <Button
+                android:id="@+id/pest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/pest"
+                android:padding="6dp"
+                android:text="Pest "
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/modularkitchen" />
+
+            <Button
+                android:id="@+id/party"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/balloons"
+                android:padding="6dp"
+                android:text="Party"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/pest"
+                app:layout_constraintStart_toEndOf="@+id/packersandmovers"
+                app:layout_constraintTop_toBottomOf="@+id/modularkitchen" />
+
+            <Button
+                android:id="@+id/packersandmovers"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/cargomover"
+                android:padding="6dp"
+                android:text="Packers, Movers"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/languageclasses" />
+
+            <Button
+                android:id="@+id/languageclasses"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/languages"
+                android:padding="6dp"
+                android:text="Languages Classes"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interiordesigners" />
+
+            <Button
+                android:id="@+id/modularkitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/kitchen"
+                android:padding="6dp"
+                android:text="Modular Kitchen"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/languageclasses"
+                app:layout_constraintTop_toBottomOf="@+id/internetandit" />
+
+            <Button
+                android:id="@+id/internetandit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/internet"
+                android:padding="6dp"
+                android:text=" Internet and IT"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/interiordesigners"
+                app:layout_constraintTop_toBottomOf="@+id/housekeeping" />
+
+            <Button
+                android:id="@+id/housekeeping"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/housekeeping"
+                android:padding="6dp"
+                android:textSize="10sp"
+                android:text="House Keeping"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/florists"
+                app:layout_constraintTop_toBottomOf="@+id/educations" />
+
+            <Button
+                android:id="@+id/florists"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/florist"
+                android:padding="6dp"
+                android:text="Florists"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doctorss" />
+
+            <Button
+                android:id="@+id/interiordesigners"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/interiodesign"
+                android:padding="6dp"
+                android:text="Interior Designers'"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/florists" />
+
+            <Button
+                android:id="@+id/educations"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/educationn"
+                android:padding="6dp"
+                android:text="Education"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/eventorg"
+                app:layout_constraintStart_toEndOf="@+id/doctorss"
+                app:layout_constraintTop_toBottomOf="@+id/decorators" />
+
+            <Button
+                android:id="@+id/eventorg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/party"
+                android:padding="6dp"
+                android:text="Event Org."
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/decorators" />
+
+            <Button
+                android:id="@+id/doctorss"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/doctorr"
+                android:padding="6dp"
+                android:text="Doctors"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/danceandmusic" />
+
+            <Button
+                android:id="@+id/danceandmusic"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/salsa"
+                android:padding="6dp"
+                android:text="Dance And Music"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/consultants" />
+
+            <Button
+                android:id="@+id/decorators"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/decor"
+                android:padding="6dp"
+                android:text="Decorators"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/danceandmusic"
+                app:layout_constraintTop_toBottomOf="@+id/contractors" />
+
+            <Button
+                android:id="@+id/contractors"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/engineerr"
+                android:padding="6dp"
+                android:text="Contractors"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/consultants"
+                app:layout_constraintTop_toBottomOf="@+id/civilcontractors" />
+
+            <Button
+                android:id="@+id/consultants"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/hmanager"
+                android:padding="6dp"
+                android:text="Consultants"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/caterers" />
+
+            <Button
+                android:id="@+id/civilcontractors"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/engineerr"
+                android:padding="6dp"
+                android:text="Civil Contractors"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/caterers"
+                app:layout_constraintTop_toBottomOf="@+id/cabsandcarrental" />
+
+            <Button
+                android:id="@+id/caterers"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/catering"
+                android:padding="6dp"
+                android:text="Caterers"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cabsandcarrental" />
+
+            <Button
+                android:id="@+id/cakeshops"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/cake"
+                android:padding="6dp"
+                android:text="Cake Shops"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bulksms" />
+
+            <Button
+                android:id="@+id/cabsandcarrental"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/carr"
+                android:padding="6dp"
+                android:text="Cabs And Car Rental"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beauty" />
+
+            <Button
+                android:id="@+id/bills"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/invoice"
+                android:padding="6dp"
+                android:text="bills "
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/automobile"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toEndOf="@+id/food"
+                app:layout_constraintTop_toBottomOf="@+id/babycare" />
+
+            <Button
+                android:id="@+id/beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/makeup"
+                android:padding="6dp"
+                android:textSize="10sp"
+                android:text="Beauty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b2b" />
+
+            <Button
+                android:id="@+id/bulksms"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/smss"
+                android:padding="6dp"
+                android:textSize="10sp"
+                android:text="Bulk SMS"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banquets" />
+
+            <Button
+                android:id="@+id/babycare"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/baby"
+                android:padding="6dp"
+                android:text="Baby Care"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/automobile"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toEndOf="@+id/food"
+                app:layout_constraintTop_toBottomOf="@+id/dailyneeds" />
+
+            <Button
+                android:id="@+id/b2b"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/team"
+                android:padding="6dp"
+                android:text="B2B"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food" />
+
+            <Button
+                android:id="@+id/banquets"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/wedding"
+                android:padding="6dp"
+                android:text="banquets"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/automobile" />
+
+            <Button
+                android:id="@+id/automobile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/carr"
+                android:padding="6dp"
+                android:text="Automobile"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/dailyneeds"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/mentalhealth"
+                android:padding="6dp"
+                android:text="Daily Needs"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/automobile"
+                app:layout_constraintStart_toEndOf="@+id/food"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                tools:ignore="NotSibling" />
+
+
+            <Button
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/morebackground"
+                android:drawableLeft="@drawable/burger"
+                android:padding="6dp"
+                android:text="Food"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar13"
+                tools:ignore="NotSibling" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar13"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/purple_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/round2"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:text="Search Category"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar13" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

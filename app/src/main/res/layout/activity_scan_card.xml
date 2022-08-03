@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanCard">
+
+    <TextView
+        android:id="@+id/showbardcodeexpirydate"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showbarcodestatus" />
+
+    <TextView
+        android:id="@+id/showbarcodestatus"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_update_24"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showbarcodecode" />
+
+    <TextView
+        android:id="@+id/showbarcodecode"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_qr_code_scanner_24"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showbarcodename" />
+
+    <Button
+        android:id="@+id/showscanneddata2"
+        android:layout_width="367dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="440dp"
+        android:background="@drawable/round"
+        android:text="Show Scanned Data"
+        android:textColor="#FDFDFD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showscanneddata"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/showscanneddata"
+        android:layout_width="367dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round"
+        android:text="Show Scanned Data"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar11" />
+
+    <TextView
+        android:id="@+id/showbarcodename"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showscanneddata2" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="252dp"
+        android:layout_height="60dp"
+        android:background="#800000"
+        android:text="VERIFY"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showbardcodeexpirydate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

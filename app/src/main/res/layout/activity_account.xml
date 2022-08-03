@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/am"
+    tools:context=".Account">
+
+    <TextView
+
+        android:id="@+id/showaccouontaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Address"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showaccountmail"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+
+        android:id="@+id/showaccountmail"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:text="Email ID:"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showaccountphone"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/showaccountphone"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp"
+        android:text="Phone"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showaccountname"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <android.widget.Toolbar
+        android:id="@+id/customtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/black"
+        android:gravity="bottom"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView8"
+        android:layout_width="173dp"
+        android:layout_height="149dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customtoolbar"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/showaccountname"
+        android:layout_width="370dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/changepassword"
+        android:layout_width="178dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round"
+        android:text="Change Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
